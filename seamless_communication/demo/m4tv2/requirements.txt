@@ -1,0 +1,6 @@
+
+omegaconf~=2.3.0
+torch~=2.0.1
+torchaudio~=2.0.1
+fairseq2==0.2.0
+
