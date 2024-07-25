@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e453672-6f93-4f41-b2f2-bddd7b85b8e3" name="Changes" comment="web">
-      <change afterPath="$PROJECT_DIR$/Structure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-native.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DiaTrans.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiaTrans.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5e453672-6f93-4f41-b2f2-bddd7b85b8e3" name="Changes" comment="all API test pass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiaTrans/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DiaTrans/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inference/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference/inference.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inference/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +56,8 @@
       <recent name="$PROJECT_DIR$/web/src/assets/icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/DiaTrans" />
       <recent name="$PROJECT_DIR$/web/src/assets/images" />
     </key>
   </component>
@@ -114,7 +106,7 @@
       <workItem from="1717656435961" duration="4459000" />
       <workItem from="1718732481622" duration="54278000" />
       <workItem from="1720596962381" duration="1131000" />
-      <workItem from="1721247265189" duration="31805000" />
+      <workItem from="1721247265189" duration="33194000" />
     </task>
     <task id="LOCAL-00001" summary="web">
       <option name="closed" value="true" />
@@ -132,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719517386378</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="all API test pass">
+      <option name="closed" value="true" />
+      <created>1721899068287</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721899068287</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="web" />
-    <option name="LAST_COMMIT_MESSAGE" value="web" />
+    <MESSAGE value="all API test pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="all API test pass" />
   </component>
 </project>
