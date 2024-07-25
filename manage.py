@@ -18,5 +18,7 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    # Add the seamless_communication/src directory to the Python path
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'seamless_communication/src'))
     main()

@@ -41,11 +41,14 @@ INSTALLED_APPS = [
     "inference.apps.InferenceConfig",
     'rest_framework',
     'rest_framework.authtoken',
-    'user',
-    'inference',
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+    ),
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
     ],
@@ -90,10 +93,6 @@ WSGI_APPLICATION = "DiaTrans.wsgi.application"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
 }
 
 

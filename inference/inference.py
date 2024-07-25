@@ -5,11 +5,13 @@ import numpy as np
 import torch
 import torchaudio
 from huggingface_hub import snapshot_download
-from seamless_communication.src.seamless_communication.inference import translator
+from seamless_communication.src.seamless_communication.inference import Translator
 from seamless_communication.demo.m4tv2.lang_list import LANGUAGE_NAME_TO_CODE
+from typing import Tuple
 
 user = getpass.getuser()
-CHECKPOINTS_PATH = pathlib.Path(os.getenv("CHECKPOINTS_PATH", f"/home/{user}/app/models"))
+home_dir = os.path.expanduser("~")
+CHECKPOINTS_PATH = pathlib.Path(os.getenv("CHECKPOINTS_PATH", f"{home_dir}/app/models"))
 if not CHECKPOINTS_PATH.exists():
     snapshot_download(repo_id="facebook/seamless-m4t-v2-large", repo_type="model", local_dir=CHECKPOINTS_PATH)
 
@@ -39,7 +41,7 @@ def preprocess_audio(input_audio: str) -> None:
         new_arr = new_arr[:, :max_length]
     torchaudio.save(input_audio, new_arr, sample_rate=int(AUDIO_SAMPLE_RATE))
 
-def run_s2st(input_audio: str, source_language: str, target_language: str) -> tuple[int, np.ndarray, str]:
+def run_s2st(input_audio: str, source_language: str, target_language: str) -> Tuple[int, np.ndarray, str]:
     preprocess_audio(input_audio)
     source_language_code = LANGUAGE_NAME_TO_CODE[source_language]
     target_language_code = LANGUAGE_NAME_TO_CODE[target_language]
@@ -65,7 +67,7 @@ def run_s2tt(input_audio: str, source_language: str, target_language: str) -> st
     )
     return str(out_texts[0])
 
-def run_t2st(input_text: str, source_language: str, target_language: str) -> tuple[int, np.ndarray, str]:
+def run_t2st(input_text: str, source_language: str, target_language: str) -> Tuple[int, np.ndarray, str]:
     source_language_code = LANGUAGE_NAME_TO_CODE[source_language]
     target_language_code = LANGUAGE_NAME_TO_CODE[target_language]
     out_texts, out_audios = translator.predict(
